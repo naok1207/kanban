@@ -5,12 +5,15 @@
 
 // list_content内
 .cards_index {
-    .card_item {
-        background-color: #ffffff;
+    .card_items {
         margin: 10px 0;
-        border-radius: 4px;
         p {
             padding: 10px;
+        }
+        .card_item {
+            background-color: #ffffff;
+            margin-bottom: 10px;
+            border-radius: 4px;
         }
     }
     button {

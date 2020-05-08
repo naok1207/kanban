@@ -1,11 +1,11 @@
 <div class="list_content">
     <div class="list_title">
-        <p>TODO</p>
+        <p><%= list.title %></p>
     </div>
     <div class="cards_index">
-        <div class="card_item">
-            <p>card</p>
+        <div class="card_items">
+            <%= render partial: 'cards/card', collection: list.cards %>
         </div>
-        <button>+ カードを追加</button>
+        <button><%= link_to '+ カードを追加', new_card_path(id: list.id) %></button>
     </div>
 </div>

@@ -1,2 +1,9 @@
-<h1>Cards#new</h1>
-<p>Find me in app/views/cards/new.html.erb</p>
+<h1>カード作成</h1>
+<%= form_for(@card) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :memo %>
+    <%= f.text_field :memo %>
+    <%= f.hidden_field :list_id, value: @list.id %>
+    <%= f.submit '作成' %>
+<% end %>
