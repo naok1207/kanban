@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+
+@import '_normalize';
+header {
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    background-color: #663399;
+    width: 100vw;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
